@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+	<master auto="start"/>
+
+	<node pkg="acoustic_magic_doa" type="acoustic_magic_doa" respawn="false" name="acoustic_magic_doa" output="screen">
+		<rosparam file="$(find acoustic_magic_doa)/config/parameters.yaml" command="load" />
+	</node>
+</launch>
