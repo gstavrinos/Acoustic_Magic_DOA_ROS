@@ -37,8 +37,8 @@ int main(int argc, char* argv[]){
 
     std::string doa_serial_device;
     std::string topic_name;
-    nh.param("acoustic_magic_doa/topic_name", topic_name, std::string("/acoustic_magic_doa/data_raw"));
-    nh.param("acoustic_magic_doa/serial_port", doa_serial_device, std::string("/dev/ttyUSB0"));
+    nh.param("topic_name", topic_name, std::string("/acoustic_magic_doa/data_raw"));
+    nh.param("serial_port", doa_serial_device, std::string("/dev/ttyUSB0"));
     ros::Publisher pub = nh.advertise<std_msgs::UInt8>(topic_name, 5);
     std_msgs::UInt8 msg;
 

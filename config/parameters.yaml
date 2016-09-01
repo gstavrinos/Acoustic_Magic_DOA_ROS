@@ -1,2 +1,2 @@
 topic_name: '/acoustic_magic_doa/data_raw'
-serial_port: '/dev/ttyUSB0'
+serial_port: '/dev/ttyUSB1'
